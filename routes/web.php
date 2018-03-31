@@ -18,3 +18,9 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+
+Route::get('/user_list', 'Auth\RegisterController@index');
+Route::get('/user_form/{string}', 'Auth\RegisterController@form');
+Route::put('/user_action/{id}', 'Auth\RegisterController@update');
+Route::delete('/user_action/{id}', 'Auth\RegisterController@destroy');

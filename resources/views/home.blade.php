@@ -13,8 +13,10 @@
                             {{ session('status') }}
                         </div>
                     @endif
+                    <ul>
+                      <li><a class="nav-link" href="{{ URL::to('/user_list') }}">Usuários</a></li>
+                    </ul>
 
-                    You are logged in!
                 </div>
             </div>
         </div>
